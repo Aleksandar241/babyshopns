@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #e5eff0;
+}
+
+.main-container {
+  padding-top: 30px;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 50%;
+  background-color: #89cff0;
+  border: 8px solid #f4c2c2;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  font-size: 65px;
+  color: #fdecec;
+  text-shadow: 1px 0px 1px #f5f5f5;
+  margin-right: 40px;
+}
+
+#badges-container {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  flex-direction: row;
+  background-color: #89cff0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-badges-border {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 4px solid #f4c2c2;
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 2px 0px rgb(190, 185, 185);
+}
+.logo-badges {
+  width: 120px;
+  height: 120px;
+}
+
+.logo-badges:hover,
+.logo-badges-border:hover {
+  transform: scale(1.1, 1.1);
+}
+a:hover {
+  background-color: #f5f5f5;
+  color: #89cff0;
+  transform: scale(1.1, 1.1);
+}
+
+.visible {
+  visibility: hidden;
+  background-color: #f4c2c2;
+}
+
+.visible-container {
+  background-color: #89cff0;
+  padding: 15px;
+  position: absolute;
+  margin-top: 130px;
+  border: 4px solid #f4c2c2;
+  color: #f5f5f5;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 160px;
+  text-align: center;
+}
+
+#badges-container div {
+  padding: 20px;
+  width: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+a {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #fdecec;
+  background-color: #89cff0;
+  border: 4px solid #f4c2c2;
+  border-radius: 25px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    max-width: 100%;
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .header h1 {
+    font-size: 45px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  #badges-container {
+    flex-direction: column;
+    border: 8px solid #f4c2c2;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 45px;
+  }
+  .logo-badges {
+    width: 160px;
+    height: 160px;
+  }
+  .logo-badges-border {
+    width: 160px;
+    height: 160px;
+    border-width: 10px;
+    border-radius: 50%;
+  }
+
+  #badges-container div {
+    margin-bottom: 70px;
+  }
+  .visible-container {
+    margin-top: 175px;
+    font-size: 19px;
+  }
+  a {
+    font-size: 25px;
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .visible-container {
+    margin-top: 140px;
+    font-size: 20px;
+  }
+}
