@@ -119,6 +119,13 @@ a {
   margin-top: 10%;
   text-decoration: none;
 }
+.fb-container {
+  position: relative;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
 @media only screen and (max-width: 600px) {
   .header {
