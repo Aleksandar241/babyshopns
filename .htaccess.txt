@@ -1,8 +1,0 @@
-# BEGIN Expire headers
-<ifModule mod_expires.c>
- ExpiresActive On
- ExpiresDefault "access plus 5 seconds"
- ExpiresByType image/jpeg "access plus 2592000 seconds"
- ExpiresByType image/png "access plus 2592000 seconds"
-</ifModule>
-# END Expire headers
